@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ht.view.MainFrameController">
+   <children>
+      <SplitPane layoutX="-312.0" layoutY="-280.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="31.0" prefHeight="20.0" prefWidth="108.0" text="社保局数据文件 ：" />
+                  <Label layoutX="25.0" layoutY="63.0" prefHeight="15.0" prefWidth="108.0" text="税务局数据文件 ： " />
+                  <Label layoutX="25.0" layoutY="88.0" prefHeight="15.0" prefWidth="108.0" text="企业数据文件    ：" />
+                <AnchorPane layoutX="-143.0" layoutY="63.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                  <Label id="social_file_text" fx:id="social_files" contentDisplay="CENTER" layoutX="127.0" layoutY="34.0" onKeyPressed="#handleSocialFiles" onMouseClicked="#handleSocialFiles" prefHeight="15.0" prefWidth="259.0" text="请选择文件或文件夹" textAlignment="CENTER" textFill="#c3b2b2" />
+                  <Label id="tax_file_text" fx:id="tax_files" contentDisplay="CENTER" layoutX="127.0" layoutY="63.0" prefHeight="15.0" prefWidth="259.0" text="请选择文件或文件夹" textAlignment="CENTER" textFill="#c3b2b2" />
+                  <Label id="enterprise_file_text" fx:id="enterprise_files" contentDisplay="CENTER" layoutX="127.0" layoutY="88.0" prefHeight="15.0" prefWidth="259.0" text="请选择文件或文件夹" textAlignment="CENTER" textFill="#c3b2b2" />
+                  <Separator layoutX="14.0" layoutY="132.0" prefHeight="3.0" prefWidth="598.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="147.5" />
+                  <Label layoutX="25.0" layoutY="175.0" text="状态 ： " />
+                  <Label id="process_label" fx:id="process_status" layoutX="79.0" layoutY="175.0" prefHeight="15.0" prefWidth="87.0" />
+                  <Label id="process_info_display" fx:id="process_info" layoutX="47.0" layoutY="216.0" prefHeight="58.0" prefWidth="367.0" />
+                  <Button id="btn_start" fx:id="btn_start" layoutX="374.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleSocialFiles" text="开始查找" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
